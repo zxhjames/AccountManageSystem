@@ -1,12 +1,12 @@
-package com.zxh.accountmanage.mapper;
+package com.zxh.accountmanage.mapper.settleManage;
 
-import com.zxh.accountmanage.model.Order;
-import com.zxh.accountmanage.model.OrderExample;
-import java.util.List;
-
+import com.zxh.accountmanage.model.settleManage.Order;
+import com.zxh.accountmanage.model.settleManage.OrderExample;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.session.RowBounds;
+
+import java.util.List;
 @Mapper
 public interface OrderMapper {
     /**
