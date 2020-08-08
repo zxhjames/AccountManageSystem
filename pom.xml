@@ -182,6 +182,9 @@
                     <configurationFile>
                         ${basedir}/src/main/resources/generatorConfig.xml
                     </configurationFile>
+                    <configurationFile>
+                        ${basedir}/src/main/resources/b.xml
+                    </configurationFile>
                     <overwrite>true</overwrite>
                     <verbose>true</verbose>
                 </configuration>

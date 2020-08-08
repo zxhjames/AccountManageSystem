@@ -1,7 +1,7 @@
 package com.zxh.accountmanage.service.settle;
 
 import com.zxh.accountmanage.dto.ResultDTO;
-import com.zxh.accountmanage.mapper.WholeSaleUserAccountMapper;
+import com.zxh.accountmanage.mapper.settleManage.WholeSaleUserAccountMapper;
 import com.zxh.accountmanage.model.settleManage.WholeSaleUserAccount;
 import com.zxh.accountmanage.model.settleManage.WholeSaleUserAccountExample;
 import org.apache.poi.ss.formula.functions.T;

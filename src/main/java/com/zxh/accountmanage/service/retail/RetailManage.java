@@ -1,7 +1,10 @@
 package com.zxh.accountmanage.service.retail;
 
 import com.zxh.accountmanage.dto.ResultDTO;
-import com.zxh.accountmanage.mapper.ElectrityPriceMapper;
+import com.zxh.accountmanage.mapper.retailAnalysis.UserTradeLogMapper;
+import com.zxh.accountmanage.mapper.settleManage.ElectrityPriceMapper;
+import com.zxh.accountmanage.model.retailAnalysis.UserTradeLog;
+import com.zxh.accountmanage.model.retailAnalysis.UserTradeLogExample;
 import com.zxh.accountmanage.model.settleManage.ElectrityPrice;
 import com.zxh.accountmanage.model.settleManage.ElectrityPriceExample;
 import org.apache.poi.ss.formula.functions.T;
@@ -17,7 +20,16 @@ import java.util.stream.Collectors;
 public class RetailManage {
     @Autowired
     private ElectrityPriceMapper electrityPriceMapper;
-
+    @Autowired
+    private UserTradeLogMapper userTradeLogMapper;
+    public void test(){
+        UserTradeLogExample userTradeLogExample = new UserTradeLogExample();
+        userTradeLogExample.createCriteria();
+        List<UserTradeLog> userTradeLogs = userTradeLogMapper.selectByExample(userTradeLogExample);
+        userTradeLogs.stream().forEach(
+                s -> System.out.println(s.getUsername())
+        );
+    }
     public ResultDTO<T> GetSellAnalysisPrice(Date begin, Date end) {
         //按照时间跨度查出时间跨度内分组的公司报价名，给前端显示整个波动情况
         ElectrityPriceExample electrityPriceExample = new ElectrityPriceExample();

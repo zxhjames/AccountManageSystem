@@ -4,6 +4,7 @@ import com.zxh.accountmanage.dto.ResultDTO;
 import com.zxh.accountmanage.service.retail.RetailManage;
 import org.apache.poi.ss.formula.functions.T;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -36,4 +37,10 @@ public class retail_trade_controller {
     public ResultDTO<T> GetSellAnalysisPrice(@RequestParam("beginTime")Date begin,@RequestParam("endTIme") Date end){
         return retailManage.GetSellAnalysisPrice(begin,end);
     }
+
+    @GetMapping("/test")
+    public void test(){
+        retailManage.test();
+    }
+
 }
