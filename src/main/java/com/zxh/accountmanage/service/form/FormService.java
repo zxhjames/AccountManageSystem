@@ -1,10 +1,10 @@
-package com.zxh.accountmanage.service.form_service;
+package com.zxh.accountmanage.service.form;
 
 import com.zxh.accountmanage.dto.ReportFormDetailDTO;
 import com.zxh.accountmanage.dto.ResultDTO;
-import com.zxh.accountmanage.mapper.settleManage.ReportFormDetailExtMapper;
-import com.zxh.accountmanage.mapper.settleManage.ReportFormDetailMapper;
-import com.zxh.accountmanage.mapper.settleManage.ReportFormInfoMapper;
+import com.zxh.accountmanage.mapper.ReportFormDetailMapper;
+import com.zxh.accountmanage.mapper.ReportFormInfoMapper;
+import com.zxh.accountmanage.mapper.ext.ReportFormDetailExtMapper;
 import com.zxh.accountmanage.model.settleManage.ReportFormDetail;
 import com.zxh.accountmanage.model.settleManage.ReportFormDetailExample;
 import com.zxh.accountmanage.model.settleManage.ReportFormInfo;

@@ -1,4 +1,5 @@
-package com.zxh.accountmanage.mapper.settleManage;
+package com.zxh.accountmanage.mapper.ext;
+
 
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;

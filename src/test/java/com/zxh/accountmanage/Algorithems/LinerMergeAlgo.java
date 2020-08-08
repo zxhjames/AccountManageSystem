@@ -3,7 +3,6 @@ package com.zxh.accountmanage.Algorithems;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -18,4 +17,5 @@ public class LinerMergeAlgo {
         Double[] arr3 = {1.6,2.6,3.3,3.6,3.4,4.6};
         Double[] arr4 = {1.0,2.5,2.5,3.9,4.4,5.6};
     }
+
 }

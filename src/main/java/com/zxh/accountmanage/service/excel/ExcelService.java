@@ -1,8 +1,7 @@
-package com.zxh.accountmanage.service.excel_service;
+package com.zxh.accountmanage.service.excel;
 
 import com.zxh.accountmanage.dto.ResultDTO;
-import com.zxh.accountmanage.service.form_service.FormService;
-import com.zxh.accountmanage.service.settlemanage_service.OrderService;
+import com.zxh.accountmanage.service.form.FormService;
 import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.hssf.usermodel.HSSFRow;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
@@ -26,8 +25,7 @@ import java.util.Map;
 
 @Service
 public class ExcelService {
-    @Autowired
-    OrderService orderService;
+
     @Autowired
     FormService formService;
 

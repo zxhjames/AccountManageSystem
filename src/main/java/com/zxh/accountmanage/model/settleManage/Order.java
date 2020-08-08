@@ -1,4 +1,4 @@
-package com.zxh.accountmanage.model;
+package com.zxh.accountmanage.model.settleManage;
 
 import java.util.Date;
 

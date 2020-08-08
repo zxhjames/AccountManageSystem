@@ -1,7 +1,7 @@
-package com.zxh.accountmanage.service.settlemanage_service;
+package com.zxh.accountmanage.service.settle;
 
 import com.zxh.accountmanage.dto.ResultDTO;
-import com.zxh.accountmanage.mapper.settleManage.WholeSaleUserAccountMapper;
+import com.zxh.accountmanage.mapper.WholeSaleUserAccountMapper;
 import com.zxh.accountmanage.model.settleManage.WholeSaleUserAccount;
 import com.zxh.accountmanage.model.settleManage.WholeSaleUserAccountExample;
 import org.apache.poi.ss.formula.functions.T;
@@ -20,5 +20,13 @@ public class DispatchSettleService {
         List<WholeSaleUserAccount> lists = wholeSaleUserAccountMapper.selectByExample(wholeSaleUserAccountExample);
         //todo 下面就是具体的业务交易算法
         return ResultDTO.okOf(lists);
+    }
+
+
+    public ResultDTO<T> InspectWithExcel(){
+        /**
+         * 通过账单的形式去校验，这个先放一放
+         */
+        return ResultDTO.okOf();
     }
 }
